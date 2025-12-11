@@ -10,6 +10,7 @@ Clustered Index : 물리적 저장 방식
 - 대부분의 데이터베이스는 PK를 생성하면 자동으로 그 컬럼에 Clustered Index를 생성함
   여기서 오해할 수 있는 부분이 있는데 PK = Clustered Index 뜻은 아님
   엄밀히 말하면 PK를 만들면 DB가 Clustered Index를 생성해준다 라는것이 맞음
+  (참고로 MySQL과 MariaDB는 PK 생성이 자동으로 Clustered Index를 생성하지만 Oracle과 Tibero, Postgresql은 자동으로 생성해 주지 않는다.)
 
 PK와 Clustered Index가 결합되었을 때 생기는 장/단점
 장점 : PK가 정수형이면서 순차적이라면(auto_increment) 범위검색이 엄청 빠릅니다.
